@@ -10,13 +10,12 @@ function Contact() {
     e.preventDefault();
 
     emailjs.sendForm(
-      SERVICE_ID,
-      TEMPLATE_ID,
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       e.target,
-      {
-        publicKey: PUBLIC_KEY,
-      }
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     )
+
     .then(() => {
       alert("Message sent successfully ✅");
       e.target.reset();
