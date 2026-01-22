@@ -1,0 +1,77 @@
+/* SECTION */
+.Con-section {
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9fafb;
+}
+
+/* HEADINGS */
+.Con-section h1 {
+  font-size: 35px;
+  margin-bottom: 0px;
+  color: #222;
+}
+
+.Con-section h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* FORM */
+.Con-section form {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* INPUTS */
+.Inp-name,
+.Inp-mail,
+.Inp-mess {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* MESSAGE BOX */
+.Inp-mess {
+  min-height: 120px;
+}
+
+/* INPUT FOCUS */
+.Inp-name:focus,
+.Inp-mail:focus,
+.Inp-mess:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+  margin-top: 10px;
+  padding: 14px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* BUTTON HOVER */
+.submit-btn:hover {
+  background-color:
+}

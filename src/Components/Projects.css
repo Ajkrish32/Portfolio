@@ -1,0 +1,46 @@
+#projects {
+  scroll-margin-top: 120px; 
+}
+
+.Pro-container h1{
+    font-size: 35px;
+    margin-left: 150px;
+}
+
+.Pro-container h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 150px;
+    color: #444;
+
+    display: inline-block;
+    margin-right: 30%;
+
+}
+
+.Pro-container p ,.Pro-container div ,.Pro-container span{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 150px;
+    max-width: 70%;
+}
+
+.Pro-container p{
+    text-indent: 50px;
+}
+
+@media (max-width: 768px) {
+    .Pro-container h1{
+        margin-left: 0;
+    }
+
+    .Pro-container h3{
+        margin-left: 5px;
+    }
+
+    .Pro-container p ,.Pro-container div ,.Pro-container span{
+        margin-left: 5%;
+        max-width: 90%;
+    }
+    
+}

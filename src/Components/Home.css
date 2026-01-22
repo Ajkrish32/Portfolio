@@ -1,0 +1,217 @@
+/* =======================
+   MAIN CONTAINER
+======================= */
+
+.home-container {
+  height: 100vh;
+  padding-top: 120px;
+}
+
+/* =======================
+   LAYOUT
+======================= */
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-right: 80px;
+}
+
+/* =======================
+   LEFT SECTION
+======================= */
+
+.hero-text {
+  margin-bottom: 320px;
+  max-width: 600px;
+  margin-left: 150px;
+}
+
+.hero-text h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 1px;
+}
+
+/* =======================
+   INFO BLOCK
+======================= */
+
+.hero-info,.hero-info1 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.hero-info span {
+  font-size: 16px;
+  color: #444;
+}
+
+/* =======================
+   PROJECT BUTTON
+======================= */
+
+.projects-btn {
+  margin-top: 25px;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+
+  transition: background-color 0.3s ease;
+}
+
+.projects-btn:hover {
+  background-color: #3b91ec;
+  color: aliceblue;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.projects-btn:hover .arrow {
+  transform: rotate(90deg);
+}
+
+/* =======================
+   RIGHT IMAGE SECTION
+======================= */
+
+.home-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 320px;
+  height: 480px;
+  object-fit: cover;
+  margin-left: 150px;
+  margin-bottom: 100px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* =======================
+   ICON RAIL
+======================= */
+
+.icon-container {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 1000;
+}
+
+.icon-box {
+  position: relative;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 22px;
+  color: black;
+  min-width: 22px;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.icon-box:hover .icon {
+  color: #007bff;
+}
+
+.icon-text {
+  position: absolute;
+  left: -160px;
+  height: 48px;
+  width: 160px;
+
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+  font-size: 16px;
+  color: black;
+  white-space: nowrap;
+
+  transition: left 0.35s ease;
+}
+
+.icon-box:hover .icon-text {
+  left: 0;
+  color: #007bff;
+}
+
+/* =======================
+   MOBILE VIEW
+======================= */
+
+@media (max-width: 768px) {
+
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  .hero-text {
+    margin: auto;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p ,.hero-info1{
+    display: none;
+  }
+
+  .hero-info,.projects-btn{
+    margin-right: 230px;
+  }
+
+  .home-right {
+    margin-top: 30px;
+  }
+
+  .profile-img {
+    margin-left: 200px;
+  }
+
+  .icon-container{
+    margin-top: 100px;
+  }
+}

@@ -1,0 +1,30 @@
+#about {
+  scroll-margin-top: 120px; 
+}
+
+.abt-container h1{
+    font-size: 35px;
+    margin-left: 150px;
+}
+
+.abt-container p,.edu-section,.cert-section{
+    font-size: 19px;
+    margin-left: 150px;
+    text-indent: 50px;
+    font-weight: 500;
+    max-width: 70%;
+    color: #444;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px){
+    .abt-container h1{
+        margin-left: 0%;
+    }
+
+    .abt-container p,.edu-section,.cert-section{
+        margin-left: 5%;
+        max-width: 90%;
+    }
+}
